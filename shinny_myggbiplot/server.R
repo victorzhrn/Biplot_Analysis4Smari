@@ -11,17 +11,11 @@ source("myggbiplot.R")
 shinyServer(function(input,output){
   
   output$myggbiplot <- reactivePlot(function(){
-    
-    
-    if (input$vecs==""){
-      selected =  NULL
-    }else{
-      selected = input$vecs
-    }
+    selected = (input$cols)
     inputAlpha = as.numeric(input$alpha)
     inputPercentage = as.numeric(input$percentage)
     inputChoices = as.numeric(input$choices)
-    print(inputChoices)
+  
     # use different df based on user input or default input
     if(!is.null(input$file)){
             df <- read.xlsx(input$file$datapath,sheet = 1)
@@ -40,9 +34,16 @@ shinyServer(function(input,output){
     }
   )
   
-  output$ui <- renderUI({
-    
+  output$cols <- renderUI({
+    if(!is.null(input$file)){
+      df <- read.xlsx(input$file$datapath,sheet = 1)
+      col_names <- names(df)
+    }else{
+      data(wine)
+      col_names <- names(wine)
+    }
+    checkboxGroupInput("cols",label = h4("Pick Features"),col_names,inline = TRUE)
   })
-
+  
   
 })
