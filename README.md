@@ -1,3 +1,4 @@
 # Biplot for Smari
-### Description
-    This is a statistical project to conduct a Principal Component Analysis by implementing a biplot for company Smari.  
+## App Details
+The details of the app can be found [here](https://zhangruinan.shinyapps.io/shinny_myggbiplot/)
+
