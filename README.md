@@ -11,25 +11,25 @@ Based on the nature of biplot explained in the previous section, biplot can be e
 The details of the app can be found [here](https://zhangruinan.shinyapps.io/shinny_myggbiplot/) 
 
 ### Functionality
-#### Import File
+* Import File
 The feature allows users to upload their own data sheet and construct a customerized biplot. For now, the app only accept data in format of excel file with all informations on "sheet1". The first rows has to be the number of features and the rest of the files has to be numerical values. 
 
-#### Ratio of Total Observation (dots) to plot
+* Ratio of Total Observation (dots) to plot
 This features allows you to plot only a subset of your data sheet in a percentage level if you have a large data set.
 
-#### Transparency
+* Transparency
 This feature allows you to adjust the transparency levels on dots (observations).
 
-#### Choose PCA vectors
+* Choose PCA vectors
 This feature allows you to change the axis to be any two of the first four PCA vectors as X and Y axises of teh biplot.
 
-#### Enter the Plot Title
+* Enter the Plot Title
 This feature allows you to change the title of the generated graphic.
 
-#### Pick Features for PCA Analysis
+* Pick Features for PCA Analysis
 This feature allows you to pick only a subset of features for PCA analysis.
 
-#### Pick Features to Display
+* Pick Features to Display
 The feature allows you to only display a subset of features on biplot.
 
 ### Default Dataset
