@@ -12,16 +12,13 @@ The details of the app can be found [here](https://zhangruinan.shinyapps.io/shin
 
 ### Functionality
 * Import File
-
-The feature allows users to upload their own data sheet and construct a customerized biplot. For now, the app only accept data in format of excel file with all informations on "sheet1". The first rows has to be the number of features and the rest of the files has to be numerical values. 
+ * The feature allows users to upload their own data sheet and construct a customerized biplot. For now, the app only accept data in format of excel file with all informations on "sheet1". The first rows has to be the number of features and the rest of the files has to be numerical values. 
 
 * Ratio of Total Observation (dots) to plot
-
-This features allows you to plot only a subset of your data sheet in a percentage level if you have a large data set.
+  * This features allows you to plot only a subset of your data sheet in a percentage level if you have a large data set.
 
 * Transparency
-
-This feature allows you to adjust the transparency levels on dots (observations).
+	* This feature allows you to adjust the transparency levels on dots (observations).
 
 * Choose PCA vectors
 This feature allows you to change the axis to be any two of the first four PCA vectors as X and Y axises of teh biplot.
