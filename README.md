@@ -37,19 +37,19 @@ The feature allows you to only display a subset of features on biplot.
 These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines.
 
 #### Feature Details
-class: The class vector, the three different cultivars of wine are reprensented by the three integers : 1 to 3.
-V1: Alcohol
-V2:Malic acid
-V3:Ash
-V4:Alcalinity of ash
-V5:Magnesium
-V6: Total phenols
-V7: Flavanoids
-V8: Nonflavanoid phenols
-V9: Proanthocyanins
-V10: Color intensity
-V11: Hue
-V12: OD280/OD315 of diluted wines
-V13: Proline
+* class: The class vector, the three different cultivars of wine are reprensented by the three integers : 1 to 3.
+* V1: Alcohol
+* V2:Malic acid
+* V3:Ash
+* V4:Alcalinity of ash
+* V5:Magnesium
+* V6: Total phenols
+* V7: Flavanoids
+* V8: Nonflavanoid phenols
+* V9: Proanthocyanins
+* V10: Color intensity
+* V11: Hue
+* V12: OD280/OD315 of diluted wines
+* V13: Proline
 
 
