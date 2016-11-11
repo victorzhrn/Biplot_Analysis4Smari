@@ -15,7 +15,7 @@ shinyServer(function(input,output){
     inputAlpha = as.numeric(input$alpha)
     inputPercentage = as.numeric(input$percentage)
     inputChoices = as.numeric(input$choices)
-  
+    data(wine)
     # use different df based on user input or default input
     if(!is.null(input$file)){
             df <- read.xlsx(input$file$datapath,sheet = 1)
@@ -50,6 +50,7 @@ shinyServer(function(input,output){
   })
   
   output$features <- renderUI({
+    data(wine)
     if(!is.null(input$file)){
       df <- read.xlsx(input$file$datapath,sheet = 1)
       col_names <- names(df)
