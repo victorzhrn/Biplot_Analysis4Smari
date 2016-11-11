@@ -21,16 +21,16 @@ The details of the app can be found [here](https://zhangruinan.shinyapps.io/shin
 	* This feature allows you to adjust the transparency levels on dots (observations).
 
 * Choose PCA vectors
-This feature allows you to change the axis to be any two of the first four PCA vectors as X and Y axises of teh biplot.
+	* This feature allows you to change the axis to be any two of the first four PCA vectors as X and Y axises of teh biplot.
 
 * Enter the Plot Title
-This feature allows you to change the title of the generated graphic.
+	* This feature allows you to change the title of the generated graphic.
 
 * Pick Features for PCA Analysis
-This feature allows you to pick only a subset of features for PCA analysis.
+	* This feature allows you to pick only a subset of features for PCA analysis.
 
 * Pick Features to Display
-The feature allows you to only display a subset of features on biplot.
+	* The feature allows you to only display a subset of features on biplot.
 
 ### Default Dataset
 #### Description
