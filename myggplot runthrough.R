@@ -202,11 +202,19 @@ if(!is.null(df.u$groups) && ellipse) {
     }
     sigma <- var(cbind(x$xvar, x$yvar))
     mu <- c(mean(x$xvar), mean(x$yvar))
+    
     ed <- sqrt(qchisq(ellipse.prob, df = 2))
     data.frame(sweep(circle %*% chol(sigma) * ed, 2, mu, FUN = '+'), 
                groups = x$groups[1])
   })
   names(ell)[1:2] <- c('xvar', 'yvar')
+  
+  centroids <- ddply(df.u,"groups",function(x){
+    mu <- c(mean(x$xvar), mean(x$yvar))
+  })
+  
+  g <- g+geom_point(data=centroids,aes(x=V1,y=V2,color=groups,shape=groups,size=10))+guides(size=F)
+  
   g <- g + geom_path(data = ell, aes(color = groups, group = groups))
 }
 

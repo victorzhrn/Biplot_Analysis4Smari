@@ -205,6 +205,16 @@ myggbiplot <- function(pcobj, choices = 1:2, scale = 1, pc.biplot = TRUE,
     g <- g + geom_path(data = ell, aes(color = groups, group = groups))
   }
   
+  # Draw Centroids of groups
+  if(!is.null(df.u$groups)){
+    centroids <- ddply(df.u,"groups",function(x){
+      mu <- c(mean(x$xvar), mean(x$yvar))
+    })
+    
+    g <- g+geom_point(data=centroids,aes(x=V1,y=V2,color=groups,shape=groups,size=10))+guides(size=F)
+    
+  }
+  
   # Label the variable axes
   if(var.axes) {
     g <- g + 

@@ -35,7 +35,8 @@ The details of the app can be found [here](https://zhangruinan.shinyapps.io/shin
 ### Default Dataset
 #### Description
 * These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars. The analysis determined the quantities of 13 constituents found in each of the three types of wines.
-
+#### Download
+* The default dataset can be downloaded on my github page "wine.csv"
 #### Feature Details
 * class: The class vector, the three different cultivars of wine are reprensented by the three integers : 1 to 3.
 * V1: Alcohol
